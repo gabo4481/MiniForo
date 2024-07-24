@@ -301,6 +301,18 @@ td{
     .contenedor-table{
         width: 100%;
     }
+
+    .contenedor-botones{
+        flex-direction: column;
+    }
+
+    .button-guardar{
+        font-size: 8px;
+    }
+
+    table{
+        font-size: 8px;
+    }
 }
 
 
