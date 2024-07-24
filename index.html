@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Foro</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<header>
+    <div class="contenedor-logo">
+        <img class="logo" src="./images/logo.png" alt="logo IUTEPAL">
+    </div>
+    <div class="contenedor-h1">
+        <h1>Mini Foro IUTEPAL</h1>
+    </div>
+</header>
+<body>
+    
+    <section class="seccion-01">
+        <div class="contenedor-page" id="contenedor-page">
+            <div class="contenedor-form">
+                <h2>Escribe un nuevo topico</h2>
+                <form class="form-topicos" id="form-topicos">
+                    <div class="input-line-container">
+                        <input class="texto" type="hidden" id="idTopico">
+                        <span class="name-input">Titulo: </span>
+                        <input class="input-line" type="text" id="titulo" name="titulo">
+                    </div>
+                    <div class="input-line-container">
+                        <span class="name-input">Autor: </span>
+                        <input class="input-line" type="text" id="autor" name="autor">
+                    </div>
+                    <div class="input-line-container">
+                        <span class="name-input">Selecciona un curso: </span>
+                        <select name="curso" id="curso">
+                            <option value="Java">Java</option>
+                            <option value="Python">Python</option>
+                            <option value="Go">Go</option>
+                            <option value="JavaScript">JavaScript</option>
+                            <option value="C#">C#</option>
+                            <option value="C">C</option>
+                        </select>
+                    </div>
+                    <div class="input-line-container">
+                        <span class="name-input">Escribe tu topico: </span>
+                        <textarea name="contenido" id="contenido"></textarea>
+                    </div>
+                    <button type="submit" class="button-guardar">Guardar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="seccion-02">
+        <div class="contenedor-table">
+            <table id="tablaTopicos">
+                <thead>
+                    <tr class="cabecera">
+                        <th>
+                            Id
+                        </th>
+                        <th>
+                            Titulo
+                        </th>
+                        <th>
+                            Autor
+                        </th>
+                        <th>
+                            Curso
+                        </th>
+                        <th class="contenido">
+                            Contenido
+                        </th>
+                        <th>
+                            Acciones
+                        </th>
+                </thead>
+                <tbody id="listaTopicos"></tbody>
+            </table>
+        </div>
+    </section>
+    <script src="./index.js" defer></script>
+</body>
+</html>
